@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-/*
- * Description: Utilizing Betty style code
+/**
+ *  main - This is the main function  Utilizing Betty style code
  *
+ *  Return: zero
  */
 int main(void)
 {
