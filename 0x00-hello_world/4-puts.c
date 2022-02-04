@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-/* Description: Utilizing Betty style code */
+/*
+ * Description: Utilizing Betty style code
+ *
+ */
 
 int main(void)
 {
