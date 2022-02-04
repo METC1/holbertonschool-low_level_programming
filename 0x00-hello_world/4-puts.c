@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*The first c code*/
+/* The first c code */
 
 int main(void)
 {
