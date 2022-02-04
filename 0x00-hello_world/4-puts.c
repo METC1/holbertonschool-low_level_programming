@@ -5,7 +5,7 @@
  *
  */
 
-int main(void)
+int main(void) /* Description: Main */
 {
 	char string[] = "\"Programming is like building a multilingual puzzle";
 
