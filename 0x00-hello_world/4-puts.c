@@ -1,9 +1,6 @@
 #include <stdio.h>
 
-/* The first c code 
- * Description: Utilizing Betty style code
- * With multy line comments
- */
+/* Description: Utilizing Betty style code */
 
 int main(void)
 {
