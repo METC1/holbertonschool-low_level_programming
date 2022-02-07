@@ -11,12 +11,12 @@ int main(void)
 	for (letra = 'a'; letra <= 'z'; letra++)
 	{
 	if (letra != 'e')
-		{
-			if (letra != 'q')
-			{
-		putchar (letra);
-			}
-		}
+	{
+	if (letra != 'q')
+	{
+	putchar (letra);
+	}
+	}
 	}
 	putchar ('\n');
 	return (0);
