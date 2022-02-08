@@ -16,11 +16,11 @@ int main(void)
 		hexa = '0';
 		}
 		else if (numero == 1)
-		{	
+		{
 		hexa = '1';
 		}
 		else if (numero == 2)
-		{		
+		{
 		hexa = '2';
 		}
 		else if (numero == 3)
