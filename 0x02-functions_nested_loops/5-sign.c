@@ -8,18 +8,18 @@
  */
 int print_sign(int n)
 {
-	int return = 0;
+	int check = 0;
 	char sign = '-';
 	
 	if (n >0 )
 	{
 	sign = '+';
-	return = 1;
+	check = 1;
 	}
 	else if (n == 0 )
 	{
 		sign = '0';
-		return = -1;
+		check = -1;
 	}
 putchar(sign);
 return (check);
