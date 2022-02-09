@@ -9,7 +9,7 @@ int _islower(int c)
 {
 int check = 0;
 
-if (islower(c) == 0)
+if (c >= 'a' && c<= 'z')
 	check = 1;
 }
 return (check);
