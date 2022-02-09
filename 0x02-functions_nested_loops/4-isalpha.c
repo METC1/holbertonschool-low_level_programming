@@ -13,7 +13,7 @@ int check = 0;
 if (c >= 'a' && c <= 'z')
 	check = 1;
 if (c >= 'A' && c <= 'Z')
-	check = 1
+	check = 1;
 
 return (check);
 }
