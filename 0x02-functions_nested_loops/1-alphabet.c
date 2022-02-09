@@ -1,10 +1,9 @@
-#include "main.h"
 /**
  * main - Function to print alphabet using _putchar
  *
  *Return: Zero
  */
-int main(void)
+void main(void)
 {
 	char letra;
 	
@@ -13,5 +12,4 @@ int main(void)
 	_putchar(letra);
 	}
 	_putchar('\n');
-	return (0);
 }
