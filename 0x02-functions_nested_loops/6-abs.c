@@ -8,9 +8,7 @@
  */
 int print_sign(int n)
 {
-	int return = 0;
-
-	if (n <0)
-	n = -1 * n;
-	return (n);
+if (n <0)
+n = -1 * n;
+return (n);
 }
