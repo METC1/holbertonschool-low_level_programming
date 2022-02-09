@@ -2,7 +2,8 @@
 
 /**
  * _islower - Function to print alphabet using _putchar
- * @parametrc: c is a char to be evaluated
+ * @c: c is a char to be evaluated
+ * 
  * Return: Int 0 if not lowercase 1 if lowercase
  */
 int _islower(int c)
