@@ -3,7 +3,7 @@
  *
  *Return: Zero
  */
-void main(void)
+void print_alphabet(void)
 {
 	char letra;
 	
