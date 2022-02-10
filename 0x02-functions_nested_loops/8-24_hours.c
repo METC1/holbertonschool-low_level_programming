@@ -1,8 +1,8 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * jack_bauer - Function to combine numbers
  *
- *Return: Void
+ *Return: Zero
  */
 void jack_bauer(void)
 {
@@ -15,14 +15,14 @@ void jack_bauer(void)
 	{
 		for (hr2 = '0' ; hr2 <= '9'; hr2++)
 		{
-			for (min1 = '0'; min1 <= '5'; min1++)
+			for (min1 = '0'; min1 < '6'; min1++)
 			{
 				for (min2 = '0'; min2 <= '9'; min2++)
 				{
-				if ((hr1 != 2 && hr1 > 4)||(min1 <= 5))
+				if ((hr1 == '2' && hr1 < '4')||(hr1 < '2'))
 				{
 				_putchar(hr1);
-				_putchar(hr2);
+				_putchat(hr2);
 				_putchar(':');
 				_putchar(min1);
 				_putchar(min2);
@@ -33,4 +33,5 @@ void jack_bauer(void)
 		}
 		
 	}
+return (0);
 }
