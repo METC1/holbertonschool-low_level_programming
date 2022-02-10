@@ -10,7 +10,7 @@ void jack_bauer(void)
 	int hr2;
 	int min1;
 	int min2;
-	
+
 	for (hr1 = '0'; hr1 <= '2'; hr1++)
 	{
 		for (hr2 = '0' ; hr2 <= '9'; hr2++)
@@ -19,7 +19,7 @@ void jack_bauer(void)
 			{
 				for (min2 = '0'; min2 <= '9'; min2++)
 				{
-				if ((hr1 == '2' && hr1 < '4')||(hr1 < '2'))
+				if ((hr1 == '2' && hr2 < '4') || (hr1 < '2'))
 				{
 				_putchar(hr1);
 				_putchar(hr2);
@@ -31,7 +31,6 @@ void jack_bauer(void)
 				}
 			}
 		}
-		
 	}
 
 }
