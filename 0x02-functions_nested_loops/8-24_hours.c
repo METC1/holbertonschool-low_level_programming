@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * jack_bauer - Function to combine numbers
  *
@@ -33,5 +33,5 @@ void jack_bauer(void)
 		}
 		
 	}
-return (0);
+
 }
