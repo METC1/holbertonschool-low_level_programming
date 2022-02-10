@@ -22,7 +22,7 @@ void jack_bauer(void)
 				if ((hr1 == '2' && hr1 < '4')||(hr1 < '2'))
 				{
 				_putchar(hr1);
-				_putchat(hr2);
+				_putchar(hr2);
 				_putchar(':');
 				_putchar(min1);
 				_putchar(min2);
