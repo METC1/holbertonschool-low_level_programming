@@ -16,12 +16,12 @@ void times_table(void)
 		for (n2 = 0 ; n2 <= 9; n2++)
 			{
 			res = n1 * n2;
-			if (res < 9)
+			if (res <= 9)
 			{
 			_putchar(' ');
 			}
 			_putchar(' ');
-			if (res > 9)
+			if (res >= 9)
 			{
 				res2 = res / 10;
 				_putchar(res2 + '0');
