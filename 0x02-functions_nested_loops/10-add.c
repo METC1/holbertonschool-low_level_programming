@@ -2,6 +2,8 @@
 
 /**
  * add - Function to add 2 int numbers
+ * @a: first int number
+ * @b: second int number
  *
  * Return: Int addition of two numbers
  */
