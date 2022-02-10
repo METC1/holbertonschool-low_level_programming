@@ -20,7 +20,7 @@ void times_table(void)
 			{
 			_putchar(' ');
 			}
-			if (n1 != 0)
+			if (n2 != 0)
 			{
 			_putchar(' ');
 			}
