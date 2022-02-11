@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * FizzBuzz - print numbers from 1 to 100 but replaces multiples of 3 or 5
+ * main - print numbers from 1 to 100 but replaces multiples of 3 or 5
  * Description: Print Fizz Buzz
- * @n: int
+ *
  * Return: void
  */
 int main(void)
