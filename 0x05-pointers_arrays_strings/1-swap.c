@@ -2,7 +2,7 @@
 
 /**
  * swap_int -  swap ints with pointers
- * @a: First int (its adresss)to be swapped 
+ * @a: First int (its adresss)to be swapped
  * @b: Second int (its adress) to be swapped
  * Return: Void
  */
