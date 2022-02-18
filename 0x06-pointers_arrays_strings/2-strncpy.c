@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strncpy - copies a string to another string
+ * _strncpy - copies a string to another
  * @dest: char string to copy to
  * @src: char string to be copied
  * @n: n bytes from src that will be copied
@@ -8,11 +8,12 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
+int i;
 
-i = 0;
-while (i < n && src[i] != '\0')
-	i++;
+for (i = 0; i < n && src[i] != '\0'; i++)
+{
+	dest[i] = src[i];
+}
 for ( ; i < n; i++)
 {
 	dest[i] = '\0';
