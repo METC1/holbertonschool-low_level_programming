@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _strncat - Concatenates two strings
- * Description: Appends the src string to the 
- * dest string,overwriting the terminating null byte (\0) 
+ * Description: Appends the src string to the
+ * dest string,overwriting the terminating null byte (\0)
  * at the end of dest
  * @dest: char string
  * @src: char string
