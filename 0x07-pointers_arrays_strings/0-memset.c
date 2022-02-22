@@ -5,7 +5,7 @@
  * @b: constant used to fill
  * @s: pointer to buffer
  * @n: first n bytes
- * Return: pointer s 
+ * Return: pointer s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
