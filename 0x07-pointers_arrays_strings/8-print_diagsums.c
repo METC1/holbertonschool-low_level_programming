@@ -3,7 +3,8 @@
 /**
  * print_diagsums - prints the diagonal sums of an array
  * @a: array of ints
- *Return: void
+ * @size: size of array
+ * Return: void
  */
 void print_diagsums(int *a, int size)
 {
