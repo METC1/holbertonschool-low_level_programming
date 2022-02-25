@@ -7,15 +7,15 @@
  */
 int square_n(int n, int i)
 {
-if (i * i == n)
-{
-	return (i);
-}
-if (i <= 0)
+if (i == n && i != 1)
 {
 	return (-1);
 }
-return (square_n(n, i - 1));
+if ((i * i) == n)
+{
+	return (i);
+}
+return (square_n(n, i + 1));
 }
 /**
  * _sqrt_recursion - calculates if number has a natural number square root
@@ -24,7 +24,7 @@ return (square_n(n, i - 1));
  */
 int _sqrt_recursion(int n)
 {
-int i = n;
+int i = 0;
 
 if (n < 0)
 {
