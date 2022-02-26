@@ -21,15 +21,15 @@ for (i = 1; i < argc; i++)
 {
 	for (j = 0; argv[i][j]; j++)
 	{
-		for (k = 0;k < 52; k++)
+		for (k = 0; k < 52; k++)
 		{
 		if (argv[i][j] == alpha[k])
 		{
 			printf("Error\n");
 			return (1);
-		}	
 		}
-	
+		}
+
 	}
 sum = sum + atoi(argv[i]);
 }
