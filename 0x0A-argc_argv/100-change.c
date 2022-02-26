@@ -20,6 +20,7 @@ return (1);
 if (atoi(argv[1]) < 0)
 {
 printf("0\n");
+return (0);
 }
 cents = atoi(argv[1]);
 c25 = cents / 25;
