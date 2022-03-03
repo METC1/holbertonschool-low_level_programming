@@ -14,11 +14,11 @@ char *concat;
 
 if (s1 == NULL)
 {
-	i = 0;
+	s1 = "";
 }
 if (s2 == NULL)
 {
-	j = 0;
+	s2 = "";
 }
 for (i = 0; s1[i]; i++)
 {
