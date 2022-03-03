@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * *create_array - Creattes array reserving 
+ * *create_array - Creattes array reserving
  * memmory with malloc and initializes array with given string
  * @size: size of the array
  * @c: char to initialize the array with
