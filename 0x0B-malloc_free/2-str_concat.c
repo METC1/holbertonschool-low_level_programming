@@ -26,7 +26,7 @@ for (i = 0; s1[i]; i++)
 for (j = 0; s2[j]; j++)
 {
 }
-concat = malloc(sizeof(char) * (i + j));
+concat = malloc(sizeof(char) * (i + j + 1));
 if (concat == NULL)
 {
 return (NULL);
@@ -39,5 +39,6 @@ for (k = 0 ; k < j; k++)
 {
 	concat[k + i] = s2[k];
 }
+concat[k + i + 1];
 return (concat);
 }
