@@ -18,6 +18,7 @@ if (str == NULL)
 	for (i = 0; str[i]; i++)
 	{
 	}
+i++;
 	str2 = malloc(sizeof(char) * i);
 	if (str2 == NULL)
 {
