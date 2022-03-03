@@ -39,6 +39,6 @@ for (k = 0 ; k < j; k++)
 {
 	concat[k + i] = s2[k];
 }
-concat[k + i + 1];
+concat[k + i + 1] = '\0';
 return (concat);
 }
