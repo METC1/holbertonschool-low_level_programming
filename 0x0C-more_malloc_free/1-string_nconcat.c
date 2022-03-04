@@ -27,7 +27,16 @@ for (i = 0; s1[i]; i++)
 for (j = 0; s2[j] && j < n; j++)
 {
 }
+
+if (n > j)
+{
 concat = malloc(sizeof(char) * (i + j + 1));
+}
+if (j > n)
+{
+concat = malloc(sizeof(char) * (i + n + 1));
+}
+
 if (concat == NULL)
 {
 return (NULL);
