@@ -20,14 +20,16 @@ if (width <= 0 || height <= 0)
 arr = malloc(sizeof(int) * height);
 if (arr == NULL)
 {
-return (NULL);
+free(arr);
+	return (NULL);
 }
 for (i = 0; i < height; i++)
 {
 arr[i] = malloc(sizeof(int) * width);
 if (arr[i] == NULL)
 {
-return (NULL);
+free(arr);
+	return (NULL);
 }
 for (j = 0; j < width; j++)
 {
