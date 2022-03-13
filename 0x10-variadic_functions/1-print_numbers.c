@@ -2,7 +2,7 @@
 #include <stdarg.h>
 /**
  * print_numbers - variadic function to print numbers
- * @separator: char to separate  values 
+ * @separator: char to separate  values
  * @n: unsigned int number of numbers to sum
  * Return: void no return
  */
@@ -18,7 +18,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		{
 		printf("%u", va_arg(num, unsigned int));
 		}
-		else 
+		else
 		{
 			printf("%u%s", va_arg(num, unsigned int), separator);
 		}
