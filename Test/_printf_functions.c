@@ -1,3 +1,8 @@
+**/
+ * print_char - Prints character by character of given pointer to character
+ * @argument: variable whre arguments are stored
+ * Return: int, the number of characters printed with function
+ */
 int print_char (va_list argument)
 {
 	char c;
@@ -6,6 +11,11 @@ int print_char (va_list argument)
 	_putchar(c);
 	return (1);
 }
+**/
+ * print_string - Prints a string character by character of given pointer to string
+ * @argument: variable whre arguments are stored
+ * Return: int, the number of characters printed with function
+ */
 
 int print_string(va_list argument)
 {
@@ -24,6 +34,11 @@ int print_string(va_list argument)
 	}
 	return (i);
 }
+**/
+ * print_number - Prints number character by character (starting with sign) of given pointer to a number
+ * @argument: variable whre arguments are stored
+ * Return: int, the number of characters printed (including sign) with function
+ */
 int print_number(va_list argument)
 {
 	int n;
@@ -57,4 +72,17 @@ int print_number(va_list argument)
 		numchar++;
 	}
 	return (numchar);
+}
+**/
+ * print_perc - Prints character by character of given pointer to character
+ * @argument: variable whre arguments are stored
+ * Return: int, the number of characters printed with function
+ */
+int print_perc (va_list argument)
+{
+	char c;
+
+	c = '%';
+	_putchar(c);
+	return (1);
 }
