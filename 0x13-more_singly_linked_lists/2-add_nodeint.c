@@ -4,7 +4,7 @@
  * containing the duplicated str
  * @head: pointer to the pointer pointing the first element of
  * the first node of a single linked list
- * @n: value of n 
+ * @n: value of n
  * Return: the address of the new element, or NULL if it failed
  */
 listint_t *add_nodeint(listint_t **head, const int n)
