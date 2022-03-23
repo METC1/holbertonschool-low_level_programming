@@ -4,7 +4,7 @@
  * @h: pointer to the first node of a single linked list
  * Return: size_t type
  */
-size_t print_listint(const list_t *h)
+size_t print_listint(const listnt_t *h)
 {
 	size_t i = 0;
 
