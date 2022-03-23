@@ -7,9 +7,9 @@
  * @n: n value
  * Return: the address of the new element, or NULL if it failed
  */
-listint_t *add_nodent_end(listnt_t **head, const int n)
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	list_t *new, *temp;
+	listint_t *new, *temp;
 
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
