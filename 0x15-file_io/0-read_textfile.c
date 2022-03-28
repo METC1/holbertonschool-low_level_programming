@@ -20,7 +20,7 @@ fd = open(filename, O_RDONLY);
 if (fd == -1)
 	return (0);
 chrrd = read(fd, buffer, letters);
-if (chrrd == -1 || chrrd < letters)
+if (chrrd == -1)
 	return (0);
 buffer[letters + 1] = '\0';
 printf("%s", buffer);
