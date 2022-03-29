@@ -18,16 +18,15 @@ if (filename == NULL)
 fd = open(filename, O_WRONLY | O_CREAT, 0600);
 if (fd == -1)
 	return (-1);
-if (text_content != NULL)
+if (text_content == NULL)
+	text_content = "";
+while (text_content[chars] != '\0')
 {
-	while (text_content[chars] != '\0')
-	{
-		chars++;
-	}
-	chrwr = write(fd, text_content, chars);
-	if (chrwr == -1)
-	return (-1);
+	chars++;
 }
+chrwr = write(fd, text_content, chars);
+if (chrwr == -1)
+return (-1);
 close(fd);
 return (1);
 }
