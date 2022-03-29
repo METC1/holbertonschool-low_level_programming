@@ -53,8 +53,7 @@ if (args != 3)
 buffr = buffer(av[2]);
 	fd = open(av[1], O_RDONLY);
 	chrrd = read(fd, buffr, 1024);
-	chr = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR |
-	S_IRGRP | S_IWGRP | S_IROTH);
+	chr = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 
 	while (chrrd > 0)
 	{
