@@ -10,14 +10,13 @@ char *buffer(char *filename);
 
 /**
  * buffer - function buffer of 1024 bytes
- * @: number of parameters
- * @av: array (1)file to copy, (2)destination file
+ * @filename: name of ile
  * Return: Always 0.
  */
 char *buffer(char *filename)
 {
 	char *buffr;
-	
+
 	buffr = malloc(sizeof(char) * 1024);
 	if (buffr == NULL)
 	{
@@ -32,31 +31,31 @@ char *buffer(char *filename)
 
 /**
  * main - copy files
- * @ac: number of parameters
+ * @args: number of parameters
  * @av: array (1)file to copy, (2)destination file
  * Return: Always 0.
  */
 int main(int args, char **av)
 {
-    int fd, chrrd, chrwr, chr, clse;
+	int fd, chrrd, chrwr, chr, clse;
 	char *buffr;
 
-fd =0;
+fd = 0;
 chrrd = 0;
 chrwr = 0;
 chr = 0;
 
-    if (args != 3)
-    {
-        dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-        exit(97);
-    }
-    buffr = buffer(av[2]);
+if (args != 3)
+{
+	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+	exit(97);
+}
+buffr = buffer(av[2]);
 	fd = open(av[1], O_RDONLY);
 	chrrd = read(fd, buffr, 1024);
 	chr = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0666);
-	
-	while (chrrd >0)
+
+	while (chrrd > 0)
 	{
 		if (fd == -1 || chrrd == -1)
 		{
@@ -64,14 +63,14 @@ chr = 0;
 			exit(98);
 		}
 		chrwr = write(chr, buffr, chrrd);
-		if(chr == -1 || chr != chrrd)
+		if (chr == -1 || chr != chrrd)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
 			exit(99);
 		}
-		chrrd = read (fd, buffr, 1024);
-		chr =open(av[2], O_WRONLY | O_APPEND);
-	}while (chrrd >0);
+		chrrd = read(fd, buffr, 1024);
+		chr = open(av[2], O_WRONLY | O_APPEND);
+	} while (chrrd > 0);
 	free(buffr);
 	clse = close(fd);
 	if (clse == -1)
@@ -85,7 +84,7 @@ chr = 0;
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", chr);
 		exit(100);
 	}
-	if(chrwr == 0)
-		return(0);
+	if (chrwr == 0)
+		return (0);
 return (0);
 }
