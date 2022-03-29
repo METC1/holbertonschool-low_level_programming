@@ -15,7 +15,7 @@ int fd, chars;
 chars = 0;
 if (filename == NULL)
 	return (-1);
-fd = open(filename, O_WRONLY | O_CREAT, 0600);
+fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 if (fd == -1)
 	return (-1);
 if (text_content == NULL)
