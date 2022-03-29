@@ -15,17 +15,27 @@ char *buffer;
 
 if (filename == NULL)
 	return (0);
-buffer = malloc(letters + 1);
+buffer = malloc(sizeof(char) * letters);
+if (buffer == NULL)
+{
+	close(fd);
+	return (0);
+}
 fd = open(filename, O_RDONLY);
 if (fd == -1)
 	return (0);
 chrrd = read(fd, buffer, letters);
 if (chrrd == -1)
+{
+	close(fd);
 	return (0);
-buffer[letters + 1] = '\0';
-chrwr = write(fd, buffer, chrrd);
-/*printf("%s", buffer);*/
+}
+chrwr = write(STDOUT_FILENO, buffer, chrrd);
 close(fd);
 free(buffer);
+if (chrw < 0)
+{
+return (0);
+}
 return (chrwr);
 }
