@@ -25,8 +25,8 @@ while (text_content[chars] != '\0')
 	chars++;
 }
 chrwr = write(fd, text_content, chars);
-if (chrwr == -1)
-return (-1);
+if (chrwr != chars)
+	return (-1);
 close(fd);
 return (1);
 }
