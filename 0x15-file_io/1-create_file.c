@@ -9,7 +9,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-ssize_t chrwr;
+int chrwr = 0;
 int fd, chars;
 
 chars = 0;
