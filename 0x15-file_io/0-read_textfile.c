@@ -15,15 +15,15 @@ char *buffer;
 
 if (filename == NULL)
 	return (0);
+fd = open(filename, O_RDONLY);
+if (fd == -1)
+	return (0);
 buffer = malloc(sizeof(char) * letters);
 if (buffer == NULL)
 {
 	close(fd);
 	return (0);
 }
-fd = open(filename, O_RDONLY);
-if (fd == -1)
-	return (0);
 chrrd = read(fd, buffer, letters);
 if (chrrd == -1)
 {
@@ -33,7 +33,7 @@ if (chrrd == -1)
 chrwr = write(STDOUT_FILENO, buffer, chrrd);
 close(fd);
 free(buffer);
-if (chrw < 0)
+if (chrwr < 0)
 {
 return (0);
 }
