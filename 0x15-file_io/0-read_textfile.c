@@ -9,7 +9,7 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-ssize_t chrrd;
+ssize_t chrrd, chrwr;
 int fd;
 char *buffer;
 
@@ -23,7 +23,9 @@ chrrd = read(fd, buffer, letters);
 if (chrrd == -1)
 	return (0);
 buffer[letters + 1] = '\0';
-printf("%s", buffer);
+chrwr = write(fd, buffer, chrrd);
+/*printf("%s", buffer);*/
 close(fd);
-return (chrrd);
+free(buffer);
+return (chrwr);
 }
